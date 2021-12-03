@@ -6,12 +6,16 @@ const loadDynamicBannerText = () => {
     strings: [
       "Christian Bongard",
       "Web Developer",
-      "Front End",
-      "Back End",
+      "Front End: HTML",
+      "Front End: CSS",
+      "Front End: JavaScript",
+      "Back End: Ruby on Rails",
+      "Back End: Ruby",
       "Full Stack Developer",
     ],
-    typeSpeed: 100,
+    typeSpeed: 50,
     loop: true,
+    smartBackspace: true
   });
 };
 
