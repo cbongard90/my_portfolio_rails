@@ -19,6 +19,8 @@
         <div class="card-body d-flex">
           <div class="col-6">
             <p><%= project[:description] %></p>
+            <p>Website: <%= link_to project[:url], project[:url], target: "_blank" %></p>
+            <p>Github: <%= link_to project[:github], project[:github], target: "_blank" %></p>
           </div>
 
 
