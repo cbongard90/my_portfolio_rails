@@ -22,43 +22,29 @@
             <p>Website: <%= link_to project[:url], project[:url], target: "_blank" %></p>
             <p>Github: <%= link_to project[:github], project[:github], target: "_blank" %></p>
           </div>
-
-
-<div id="carouselProject<%= index + 1%>" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <% images = project[:images] %>
-    <% for imageIndex in 0...images.length %>
-      <li data-target="#carouselProject<%= index + 1%>" data-slide-to="<%= imageIndex %>" <%= "class= active" if imageIndex == 0 %>></li>
-    <% end %>
-  </ol>
-  <div class="carousel-inner">
-    <% images.each_with_index do |image, imageIndex| %>
-      <div class="carousel-item <%= "active" if imageIndex == 0 %>">
-        <img class="d-block w-100" src="<%= image[:url] %>" alt="<%= image[:title] %>">
-      </div>
-    <% end %>
-  </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselProject<%= index + 1%>" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselProject<%= index + 1%>" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
+            <div id="carouselProject<%= index + 1%>" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <% images = project[:images] %>
+                <% for imageIndex in 0...images.length %>
+                  <li data-target="#carouselProject<%= index + 1%>" data-slide-to="<%= imageIndex %>" <%= "class= active" if imageIndex == 0 %>></li>
+                <% end %>
+              </ol>
+              <div class="carousel-inner">
+                <% images.each_with_index do |image, imageIndex| %>
+                  <div class="carousel-item <%= "active" if imageIndex == 0 %>">
+                    <img class="d-block w-100" src="<%= image[:url] %>" alt="<%= image[:title] %>">
+                  </div>
+                <% end %>
+              </div>
+              <button class="carousel-control-prev" type="button" data-target="#carouselProject<%= index + 1%>" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-target="#carouselProject<%= index + 1%>" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
         </div>
       </div>
     </div>

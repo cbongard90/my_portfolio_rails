@@ -1,5 +1,6 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;400;900&family=Londrina+Solid:wght@100;300&display=swap");
+@import url("./shared/shared.scss");
 
 html {
   scroll-behavior: smooth;
@@ -78,13 +79,7 @@ html {
     var(--background-color7)
   );
 }
-#contact {
-  background: linear-gradient(
-    180deg,
-    var(--background-color7),
-    var(--background-color8)
-  );
-}
+
 footer {
   padding: 5px 10px;
   background: linear-gradient(
