@@ -24,20 +24,17 @@
 
 <div id="carouselProject<%= index + 1%>" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselProject<%= index + 1%>" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselProject<%= index + 1%>" data-slide-to="1"></li>
-    <li data-target="#carouselProject<%= index + 1%>" data-slide-to="2"></li>
+    <% images = project[:images] %>
+    <% for imageIndex in 0...images.length %>
+      <li data-target="#carouselProject<%= index + 1%>" data-slide-to="<%= imageIndex %>" <%= "class= active" if imageIndex == 0 %>></li>
+    <% end %>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638465915/portfolio/projects/project1_le_bateau/dashboard_rghsaa.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638465912/portfolio/projects/project3_watch_list/home_page_qbyefq.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638465919/portfolio/projects/project3_watch_list/list_show_wewv6r.png" class="d-block w-100" alt="...">
-    </div>
+    <% images.each_with_index do |image, imageIndex| %>
+      <div class="carousel-item <%= "active" if imageIndex == 0 %>">
+        <img class="d-block w-100" src="<%= image[:url] %>" alt="<%= image[:title] %>">
+      </div>
+    <% end %>
   </div>
   <button class="carousel-control-prev" type="button" data-target="#carouselProject<%= index + 1%>" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
