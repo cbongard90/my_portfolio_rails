@@ -1,0 +1,6 @@
+# config/meta.yml
+
+meta_product_name: "Product Name"
+meta_title: "Christian Bongard's Portfolio | Full-Stack developer"
+meta_description: "Welcome all to my profile bio, my name is Christian Bongard and I am a Full-stack developer. Feel free to visit my portfolio or contact me for collaborations."
+meta_image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638380323/portfolio/open-graph_fbkpag.jpg" # should exist in `app/assets/images/`
