@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     cloudinary_url = 'https://res.cloudinary.com/dzn5ijtvz/image/upload/'
-    projects = [
+    @projects = [
       {
         name: 'Le Bateau',
         description: 'lorem',
