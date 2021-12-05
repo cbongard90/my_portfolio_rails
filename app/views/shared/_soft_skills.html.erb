@@ -1,0 +1,11 @@
+<div class="soft-skills">
+  <h3>My soft skills</h3>
+  <div class="soft-grid">
+    <% @soft_skills.each do |soft_skill| %>
+      <div class="soft-skill">
+        <h4><%= soft_skill[:name] %></h4>
+        <%= image_tag soft_skill[:image] %>
+      </div>
+    <% end %>
+  </div>
+</div>
