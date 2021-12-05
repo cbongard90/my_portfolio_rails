@@ -3,7 +3,7 @@
   class="min-vh-100 d-flex align-items-center position-relative"
   id="banner"
 >
-  <div id="banner_anchor" class="anchor"></div>
+  <div id="banner_" class="anchor"></div>
   <div class="banner-content">
     <h1 id="welcome">Hello</h1>
     <p>
@@ -13,13 +13,13 @@
 </div>
 
 <div class="min-vh-100 position-relative" id="about_me">
-  <div id="about_me_anchor" class="anchor"></div>
+  <div id="about_me_" class="anchor"></div>
   <h3>About Me</h3>
   <p>Hello</p>
 </div>
 
 <div class="min-vh-100 position-relative" id="career">
-  <div id="career_anchor" class="anchor"></div>
+  <div id="career_" class="anchor"></div>
   <h3>My Career</h3>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt
@@ -29,7 +29,7 @@
   </p>
 </div>
 <div class="min-vh-100 position-relative" id="education">
-  <div id="education_anchor" class="anchor"></div>
+  <div id="education_" class="anchor"></div>
   <h3>My Education</h3>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
@@ -40,34 +40,13 @@
     ea.
   </p>
 </div>
-<div class="min-vh-100 position-relative" id="passions">
-  <div id="passions_anchor" class="anchor"></div>
-  <h3>My Interests</h3>
-  <div class="passions_grid">
-    <div class="passions_grid_items">
-      <img src="images/passions/diving.jfif" alt="diving and swimming" />
-      <h4>Diving and swimming</h4>
-      <p></p>
-    </div>
-    <div class="passions_grid_items">
-      <img src="images/passions/hiking.jpeg" alt="hiking" />
-      <h4>Hiking</h4>
-      <p></p>
-    </div>
-    <div class="passions_grid_items">
-      <img src="images/passions/gaming.jpeg" alt="gaming" />
-      <h4>Computer gaming</h4>
-      <p></p>
-    </div>
-    <div class="passions_grid_items">
-      <img src="images/passions/running.jpeg" alt="running" />
-      <h4>Running</h4>
-      <p></p>
-    </div>
-  </div>
+<div class="min-vh-100 position-relative" id="skills">
+  <div id="skills_" class="anchor"></div>
+  <h3>My skills</h3>
+
 </div>
 <div class="min-vh-100 position-relative" id="projects">
-  <div id="projects_anchor" class="anchor"></div>
+  <div id="projects_" class="anchor"></div>
   <div class="container">
     <h3 class="text-light">My projects</h3>
     <!-- Accordion -->
@@ -75,20 +54,18 @@
   </div>
 </div>
 <div class="min-vh-100 position-relative" id="contact">
-  <div id="contact_anchor" class="anchor"></div>
+  <div id="contact_" class="anchor"></div>
   <div class="contact-content">
     <h2>Contact me</h2>
-    <br>
+    <div class="typed-content">
+      <span id="contact-typed-text" style="white-space:pre;"></span>
+    </div>
     <p>
     <%= link_to "https://github.com/cbongard90", target:"_blank" do%>
       <i class="fab fa-github-square"></i>
     <% end %>
     <%= link_to "https://www.linkedin.com/in/cbongard90/", target:"_blank" do%>
       <i class="fab fa-linkedin"></i>
-    <% end %>
-
-    <%= link_to "mailto: christian.bongard90@gmail.com", target:"_blank" do %>
-      <i class="fas fa-envelope-square"></i>
     <% end %>
     <%= link_to "https://www.facebook.com/CBongard90/", target:"_blank" do %>
       <i class="fab fa-facebook-square"></i>
@@ -98,6 +75,9 @@
     <% end %>
     <%= link_to "https://codepen.io/cbongard90", target:"_blank" do %>
       <i class="fab fa-codepen"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fas fa-envelope"></i>
     <% end %>
     </p>
   </div>

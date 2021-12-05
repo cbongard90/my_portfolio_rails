@@ -7,19 +7,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: azure;
   h2{
-    color: azure;
     font-size: 6rem;
     font-weight: bolder;
     text-align: center;
   }
+  span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .typed-content{
+    min-height: 200px;
+  }
   a{
+    color: azure;
     text-decoration: none;
     margin: 2rem;
   }
   i{
     font-size: 5rem;
-    color: azure;
+    opacity: 0.8;
+    &:hover{
+      opacity: 1;
+    }
   }
   .anchor{
     top: 80px;
