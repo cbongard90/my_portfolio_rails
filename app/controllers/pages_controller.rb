@@ -103,7 +103,7 @@ class PagesController < ApplicationController
       {
         name: 'HTML',
         description: 'Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. It is used for structuring the content of Web pages, including text, images, sound, video, and other objects embedded in Web pages.',
-        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638731349/portfolio/skills/html5_urp0y6.png"
+        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638792768/portfolio/skills/html5_weq5gp.png"
       },
       {
         name: 'CSS',
@@ -118,7 +118,7 @@ class PagesController < ApplicationController
       {
         name: 'SQL',
         description: 'Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).',
-        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638731349/portfolio/skills/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-azure-sql-data-warehouse-logo-text-logo-microsoft-azure_jwgatw.png"
+        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638791050/portfolio/skills/SQL_e33v3j.png"
       },
       {
         name: 'Ruby',
@@ -128,7 +128,7 @@ class PagesController < ApplicationController
       {
         name: 'Matlab',
         description: 'Matlab is a multi-paradigm numerical computing environment. It is a high-level programming language, with a C-like syntax and a FORTRAN-like syntax. Matlab is used for numerical computation, signal processing, control systems, and optimization. It is also used for data acquisition, visualization, and visualization of numerical simulation.',
-        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638731349/portfolio/skills/matlab_dlb4vd.jpg"
+        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638791051/portfolio/skills/Matlab_x0k0ah.png"
       },
       {
         name: 'Heroku',
@@ -175,12 +175,12 @@ class PagesController < ApplicationController
       {
         name: 'Creativity',
         description: 'I am a great team player who is able to communicate effectively and effectively communicate effectively.',
-        image: "#{cloudinary_url}v1638465915/portfolio/skills/creativity_logo_z1zjyv.png"
+        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638795015/portfolio/skills/creativity_jfhhap.jpg"
       },
       {
-        name: 'Teamwork',
+        name: 'Leadership',
         description: 'I am a great team player who is able to communicate effectively and effectively communicate effectively.',
-        image: "#{cloudinary_url}v1638465915/portfolio/skills/teamwork_logo_z1zjyv.png"
+        image: "https://res.cloudinary.com/dzn5ijtvz/image/upload/v1638795130/portfolio/skills/leadership_l3b6wp.jpg"
       }
     ]
   end

@@ -1,6 +1,5 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;400;900&family=Londrina+Solid:wght@100;300&display=swap");
-@import url("./shared/shared.scss");
 
 html {
   scroll-behavior: smooth;
@@ -66,13 +65,7 @@ html {
     var(--background-color5)
   );
 }
-#skills {
-  background: linear-gradient(
-    180deg,
-    var(--background-color5),
-    var(--background-color6)
-  );
-}
+
 #projects {
   background: linear-gradient(
     180deg,
@@ -92,7 +85,11 @@ footer {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-weight: bolder;
+  color: aliceblue;
+  padding: 2rem;
+  font-size: 4em;
+  text-align: center;
 }
 h3 {
   font-family: "Roboto", sans-serif;
