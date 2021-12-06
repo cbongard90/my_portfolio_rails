@@ -1,10 +1,13 @@
 <div class="tech-skills">
-  <h3>My technical skills</h3>
+  <h3>Technical skills</h3>
   <div class="tech-grid">
     <% @tech_skills.each do |tech_skill| %>
       <div class="tech-skill">
-        <h4><%= tech_skill[:name] %></h4>
-        <%= image_tag tech_skill[:image] %>
+        <h4><strong><%= tech_skill[:name] %></strong></h4>
+
+          <%= image_tag tech_skill[:image] %>
+
+        <%= link_to 'More Info', '#skills_', class:'btn btn-primary btn-block rounded-pill' %>
       </div>
     <% end %>
   </div>

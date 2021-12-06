@@ -1,10 +1,11 @@
 <div class="soft-skills">
-  <h3>My soft skills</h3>
+  <h3>Soft skills</h3>
   <div class="soft-grid">
     <% @soft_skills.each do |soft_skill| %>
       <div class="soft-skill">
         <h4><%= soft_skill[:name] %></h4>
         <%= image_tag soft_skill[:image] %>
+        <%= link_to 'More Info', '#skills_', class:'btn btn-primary btn-block rounded-pill' %>
       </div>
     <% end %>
   </div>

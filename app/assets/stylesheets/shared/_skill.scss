@@ -1,9 +1,45 @@
-.tech-grid ,.soft-grid{
-  display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-gap: 2em;
-  padding: 2em;
-  img{
-    width: 100%;
+#skills {
+  padding: 2em 0;
+  background: linear-gradient(
+    180deg,
+    var(--background-color5),
+    var(--background-color6)
+  );
+
+
+}
+
+.tech-grid,
+.soft-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto;
+
+  img {
+    width: 18vh;
+    height: 18vh;
+    margin: 10px 0;
+    object-fit: cover;
+    object-position: center;
+  }
+  .tech-skill,
+  .soft-skill {
+
+    min-width: 30vh;
+    padding: 1em;
+    height: calc(30vh + 20px);
+    text-align: center;
+    background-color: hsl(208, 100%, 97%);
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    &:hover {
+      transform: scale(1.05);
+      background-color: hsl(208, 100%, 94%);
+    }
   }
 }
