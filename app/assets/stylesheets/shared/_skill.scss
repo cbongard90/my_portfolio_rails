@@ -5,7 +5,13 @@
     var(--background-color5),
     var(--background-color6)
   );
-
+  h3{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: bold;
+  }
 
 }
 
@@ -25,6 +31,7 @@
     margin: 10px 0;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
   }
   .tech-skill,
   .soft-skill {
