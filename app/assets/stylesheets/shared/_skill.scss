@@ -5,14 +5,13 @@
     var(--background-color5),
     var(--background-color6)
   );
-  h3{
+  h3 {
     width: 90%;
     margin: 10px auto;
     font-size: 2rem;
     color: aliceblue;
     font-weight: bold;
   }
-
 }
 
 .tech-grid,
@@ -35,7 +34,6 @@
   }
   .tech-skill,
   .soft-skill {
-
     min-width: 30vh;
     padding: 1em;
     height: calc(30vh + 20px);
@@ -48,5 +46,27 @@
       transform: scale(1.05);
       background-color: hsl(208, 100%, 94%);
     }
+
+    button {
+      // create a transition background color
+      background: linear-gradient(
+        135deg,
+        hsl(182, 67%, 57%),
+        hsl(207, 94%, 45%)
+      );
+      background-size: 400%;
+      animation: transition_background 20s infinite linear;
+    }
+  }
+}
+@keyframes transition_background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
