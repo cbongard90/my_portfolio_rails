@@ -4,21 +4,21 @@
   padding: 30px;
   list-style: none;
   max-width: 70vw;
-  height: 170vh;
+  height: 180vh;
   &:before{
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 3px;
+    width: 10px;
     background: #e5e5e5;
     left: 50%;
-    margin-left: -1.5px;
+    margin-left: -5px;
   }
   .arrowhead{
     --arrowhead-width: 3rem;
     position: absolute;
-    top: calc(-1 * var(--arrowhead-width));
+    top: calc(-1 * var(--arrowhead-width) + 1px);
     background: #e5e5e5;
     left: calc(50% - var(--arrowhead-width) / 2);
     width: var(--arrowhead-width);
@@ -38,9 +38,9 @@
   li {
 		min-height: 200px;
 		width: 50%;
-		padding-left: 42px;
-		padding-right: 42px;
-		margin-bottom: 30px;
+		// padding-left: 42px;
+		padding-right: 5em;
+		margin-bottom: 3em;
 		position: relative;
 		float: left;
 		clear: left;
@@ -49,6 +49,7 @@
   .panel {
 		width: 92%;
 		float: left;
+
     clear: left;
 		border: 1px solid #d4d4d4;
     background-color: aliceblue;
@@ -60,7 +61,7 @@
   .pointer{
     position: absolute;
     top: 1rem;
-    right: -1rem;
+    right: calc(-1rem + 1px);
     --pointer-width: 2rem;
     background-color: aliceblue;
     height: var(--pointer-width);
@@ -72,6 +73,8 @@
   .inverted{
     float: right;
     clear: right;
+    padding-right: 0;
+    padding-left: 5em;
     margin-top: 0;
     margin-bottom: 2rem;
     .panel{
@@ -83,6 +86,7 @@
     }
     .badge{
       left: 0;
+      justify-content: flex-end;
 
       .circle{
         left: -1rem;
@@ -97,17 +101,18 @@
 
   // For the badges
   .badge{
-    width: 4rem;
+    width: 6rem;
     height: 4rem;
     font-size: 2em;
     line-height: 4rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 100;
 
-    border-radius: 50%;
 
 		cursor: default;
     .circle{
@@ -119,6 +124,9 @@
       top: 20%;
       right: -1rem;
       border: 8px solid #e71515;
+    }
+    p{
+      margin: 0;
     }
   }
 }

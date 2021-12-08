@@ -48,6 +48,7 @@
     }
 
     button {
+      font-weight: bolder;
       // create a transition background color
       background: linear-gradient(
         135deg,
@@ -55,18 +56,7 @@
         hsl(207, 94%, 45%)
       );
       background-size: 400%;
-      animation: transition_background 20s infinite linear;
+      background-position: 1%;
     }
-  }
-}
-@keyframes transition_background {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
