@@ -8,32 +8,58 @@
   align-items: center;
   justify-content: center;
   color: azure;
-  h2{
+  h2 {
     font-size: 6rem;
     font-weight: bolder;
     text-align: center;
   }
-  span{
+  span {
     font-size: 1.5rem;
     font-weight: bolder;
     text-align: center;
   }
-  .typed-content{
+  .typed-content {
     min-height: 200px;
   }
-  a{
+  a {
     color: azure;
     text-decoration: none;
     margin: 2rem;
   }
-  i{
+  .contact-link {
     font-size: 5rem;
     opacity: 0.8;
-    &:hover{
+    transition: all 0.5s ease-in-out;
+    &:hover {
       opacity: 1;
+      box-shadow: 0 0 30px hsla(208, 100%, 97%, 0.199);
     }
   }
-  .anchor{
+  .anchor {
     top: 80px;
+  }
+  button {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+    color: rgb(8, 8, 8);
+    display: block;
+    background: linear-gradient(
+    45deg,
+    var(--background-color1),
+    var(--background-color7)
+  );
+    background-size: 300%;
+    background-position-x: left;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      color: aliceblue;
+      background-position-x: 99%;
+      box-shadow: 0 0 30px hsla(208, 100%, 97%, 0.199);
+    }
+    i {
+      font-size: 1.5rem;
+      opacity: 1;
+    }
   }
 }
