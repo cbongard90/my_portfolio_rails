@@ -19,12 +19,16 @@
     <p class='quote'><i class="fas fa-quote-left"></i>Wisdom is not a product of schooling but of the lifelong attempt to acquire it.<i class="fas fa-quote-right"></i></p>
     <p>- Albert Einstein</p>
     <br>
-    <p>My name is Christian Bongard, I'm an ex-chemical engineer who finished Le Wagon bootcamp in 2021. I am a huge tech-enthusiast and this passion led me to further my knowledge in coding web applications. I graduated from Monash University in 2015 and then proceeded to work as a post-graduate researcher from 2016 until 2020.</p>
+    <div class="my-info d-flex">
+      <div class="about-text">
+        <p>My name is Christian Bongard, I'm an ex-chemical engineer who finished Le Wagon bootcamp in 2021. I am a huge tech-enthusiast and this passion led me to further my knowledge in coding web applications. I graduated from Monash University in 2015 and then proceeded to work as a post-graduate researcher from 2016 until 2020.</p>
 
-    <p>I thereafter left and started to look at other possible work opportunities. I started to learn some basic coding languages as a hobby and with the hopes of joining a tech company. I received the chance to hone my coding skills at Le Wagon in 2021 as I could apply all my past knowledge as well as what I learned from this amazing experience.</p>
-    <p>As from now, I'm focussing on learning new coding languages and hone my skills. Please feel free to roam around my portfolio and chat with me if you wish.</p>
-    <p>- Christian Bongard</p>
-    <%= render 'shared/about_carousel' %>
+        <p>I thereafter left and started to look at other possible work opportunities. I started to learn some basic coding languages as a hobby and with the hopes of joining a tech company. I received the chance to hone my coding skills at Le Wagon in 2021 as I could apply all my past knowledge as well as what I learned from this amazing experience.</p>
+        <p>As from now, I'm focussing on learning new coding languages and hone my skills. Please feel free to roam around my portfolio and chat with me if you wish.</p>
+        <p>- Christian Bongard</p>
+      </div>
+      <%= render 'shared/about_carousel' %>
+    </div>
   </div>
 </div>
 
@@ -100,7 +104,7 @@
 
     <br>
     <%= link_to 'Resume_Christian_Bongard.pdf', download: '' do %>
-      <button class='btn btn-lg rounded-pill'>Download my resume <i class="fas fa-file-download"></i></button>
+      <button class='btn btn-lg rounded-pill'><strong>Download my resume</strong> <i class="fas fa-file-download"></i></button>
     <% end %>
   </div>
 </div>
