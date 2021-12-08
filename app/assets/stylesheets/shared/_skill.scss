@@ -12,6 +12,13 @@
     color: aliceblue;
     font-weight: bold;
   }
+  p{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
+  }
 }
 
 .tech-grid,
@@ -48,25 +55,20 @@
     }
 
     button {
+      font-weight: bolder;
       // create a transition background color
       background: linear-gradient(
         135deg,
         hsl(182, 67%, 57%),
-        hsl(207, 94%, 45%)
+        hsl(221, 88%, 29%)
       );
       background-size: 400%;
-      animation: transition_background 20s infinite linear;
+      background-position: 1%;
+      transition: all 0.5s ease;
+      &:hover {
+        color: aliceblue;
+        background-position: 100%;
+      }
     }
-  }
-}
-@keyframes transition_background {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
