@@ -4,7 +4,7 @@
   padding: 30px;
   list-style: none;
   max-width: 70vw;
-  height: 200vh;
+  height: 170vh;
   &:before{
     content: '';
     position: absolute;
@@ -25,9 +25,18 @@
     height: var(--arrowhead-width);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
+  .end{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #e5e5e5;
+    position: absolute;
+    left: calc(50% - (3rem / 2));
+    bottom: 0;
+  }
 
   li {
-		min-height: 250px;
+		min-height: 200px;
 		width: 50%;
 		padding-left: 42px;
 		padding-right: 42px;
@@ -40,12 +49,12 @@
   .panel {
 		width: 92%;
 		float: left;
+    clear: left;
 		border: 1px solid #d4d4d4;
     background-color: aliceblue;
-		/*border-radius: 2px;*/
-		/*padding: 20px;*/
+    padding: 20px;
+    border-radius: 10px;
 		position: relative;
-		-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	}
   .pointer{
@@ -83,7 +92,7 @@
 
 
   li:nth-child(3){
-    margin-top: 5rem;
+    margin-top: 100px;
   }
 
   // For the badges
